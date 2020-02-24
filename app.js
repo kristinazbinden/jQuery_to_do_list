@@ -16,7 +16,6 @@ $(() => {
 
             $firstbutton.on('click', () => {
                 $('#completed').append($firstDiv);
-                $firstDiv.css('background-color','#FCF2F6');
                 $firstbutton.addClass('remove').text('Remove Item');
 
 
