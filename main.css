@@ -1,0 +1,129 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+/* Color Variables */
+:root {
+  --dark-blue: #1A1B41;
+  --light-blue: #4062BB;
+  --white: #FCF2F6;
+  --yellow: #BAFF29;
+
+}
+
+/* center the main container */
+.container {
+  width: 60%;
+  min-height: 80vh;
+  margin: auto;
+  /* background-color: rgba(252,242,246,0.9); */
+}
+
+/* make the div with the id lists into a flex container */
+.lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+    background: linear-gradient(180deg, rgba(58,36,87,1) 0%, rgba(51,31,79,1) 10%, rgba(44,26,71,1) 33%, rgba(142,102,184,1) 100%, rgba(93,62,124,1) 100%);
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px 0px rgba(26, 19, 35, 0.75);
+    padding: 10px;
+    margin: 3%;
+    font-size: 24px;
+    list-style: none;
+}
+
+li > h2 {
+    color: var(--yellow);
+    text-shadow: 1px 1px 5px var(--yellow);
+}
+
+
+/* General style */
+body {
+    background-color: var(--dark-blue);
+    font-family: 'Odibee Sans', cursive;
+    text-align: center;
+
+}
+
+h1 {
+  font-size: 40px;
+  color: var(--white);
+  border-bottom: 1px solid var(--yellow);
+}
+
+h2{
+  font-size: 35px;
+  color: var(--white);
+  border-bottom: 1px solid var(--yellow);
+}
+
+/* Forms, Buttons, Input */
+
+input {
+    background-color: var(--yellow);
+    width: 300px;
+
+
+}
+
+button {
+  margin-bottom: 1em;
+  padding: 1em 3em;
+  border-radius: .5em;
+  color: var(--blue);
+  background-color: var(--white);
+}
+
+
+button:focus {
+  outline: 0;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lists button:hover, button:hover {
+  background: var(--teal);
+}
+
+.lists button {
+  background: inherit;
+}
+
+
+/* list containers on large screens */
+#to-do-list,  #completed {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  margin: 1em;
+}
+
+/* Spin Add button */
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
